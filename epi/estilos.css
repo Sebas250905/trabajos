@@ -1,0 +1,103 @@
+/* Establecer el body para que ocupe al menos toda la altura de la pantalla */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo para la caja principal */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    flex-grow: 1;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilo para los encabezados */
+h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+/* Estilo de los inputs personalizados */
+.custom-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    color: white;
+}
+
+.custom-input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #667eea;
+    outline: none;
+}
+
+/* Estilo de los botones personalizados */
+.custom-btn {
+    background: #667eea;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    transition: background 0.3s;
+}
+
+.custom-btn:hover {
+    background: #764ba2;
+    transition: background 0.3s;
+}
+
+a.custom-btn {
+    text-decoration: none;
+}
+
+/* Estilo de la tabla */
+.table {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    color: white;
+    text-align: center;
+    padding: 0.4rem; /* Reducir más el padding */
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente en las celdas */
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transition: 0.3s;
+}
+
+/* Reducir el tamaño de la tabla */
+.table-custom {
+    font-size: 0.8rem; /* Más pequeño aún */
+    max-width: 70%; /* Reducir aún más el ancho de la tabla */
+    margin: 0 auto; /* Centrar la tabla */
+    height: auto; /* Ajustar la altura automáticamente */
+    overflow-y: auto; /* Hacer que la tabla sea desplazable si es necesario */
+}
+
+/* Ajustar el tamaño de las celdas de la tabla */
+.table th, .table td {
+    padding: 0.4rem; /* Reducir más el padding para hacerlo más compacto */
+}
